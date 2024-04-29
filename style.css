@@ -1,7 +1,46 @@
-.titre{
+.titre {
     text-align: center;
 }
 
-.intro{
+.intro {
     text-align: center;
+}
+
+.logo img {
+    max-width: 15%;
+    padding-left: 2rem;
+}
+
+.topPage {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    /* padding-top: 2rem; */
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    float: right;
+    padding-right: 2rem;
+    max-height: 30px;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img,
+.about {
+    border: solid red 2px;
+    width: 20rem;
+    height: 20rem;
+}
+
+.about,
+.daily {
+    align-self: stretch;
 }
