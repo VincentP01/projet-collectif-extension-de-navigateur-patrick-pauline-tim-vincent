@@ -1,0 +1,9 @@
+{
+    "manifest_version": 3,
+    "name": "My Custom Landing Page",
+    "version": "1.0",
+    "description": "This extension changes the landing page to a page I coded myself.",
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    }
+}
