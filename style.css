@@ -1,17 +1,9 @@
 body {
+    margin: 0;
     height: 100vh;
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-}
-
-.titre {
-    text-align: center;
-}
-
-.intro {
-    text-align: center;
 }
 
 .logo img {
@@ -20,7 +12,6 @@ body {
 }
 
 .topPage {
-    margin: 2vh 1vh 5vh;
     justify-content: space-between;
     display: flex;
     flex-direction: row;
@@ -31,7 +22,7 @@ body {
 .search-bar {
     display: flex;
     padding-right: 2rem;
-    max-height: 30px;
+    max-height: 5vh;
     text-align: center;
     justify-content: flex-end;
 }
@@ -44,27 +35,56 @@ body {
 }
 
 .button {
+    background-color: transparent;
+    border: transparent;
+    max-width: 4rem;
     margin-left: 1rem;
-    font-size: 20px;
-    border-radius: 20px;
-    text-align: center;
     display: inline-block;
 }
 
+#searchIcon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .mainContainer {
+    justify-content: space-around;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 5rem;
     align-items: center;
+    min-height: 45rem;
+}
+
+.titre {
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
 }
 
 .about,
 .daily {
     border: solid red 2px;
-    max-height: 60rem;
-    width: 100%;
-    /* height: 100%; */
+    max-width: 500px;
+    width: 80%;
     align-self: stretch;
+}
+
+.about {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+
+.daily {
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #dailyImage {
