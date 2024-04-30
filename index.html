@@ -3,26 +3,35 @@
 
 <head>
     <title>Dormir moins bete</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet" />
 </head>
 
 <body>
+
+    <!-- Espace du haut incluant le logo et la barre de recherche -->
     <div class="topPage">
         <div class="logo"><img src="./ananas.png"></div>
-        <form action="https://google.com/search" method="GET" class="search-bar">
-            <input type="text" name="q" placeholder="Recherche" />
-            <button type="submit">Search</button>
+        <!-- Barre de recherche Google -->
+        <form class="search-bar" action="https://google.com/search" method="GET">
+            <input class="search" type="text" name="q" placeholder="Recherche" />
+            <button class="button" type="submit">Search</button>
         </form>
     </div>
+
+    <!-- Espace principal de la page incluant le titre à droite, l'image à gauche -->
     <div class="mainContainer">
+        <!-- Titre et description de l'extension -->
         <div class="about">
             <h1 class="titre">Bienvenue sur Dormir moins bete!</h1>
             <p class="intro">Qu'est ce que nous allons t'apprendre aujourd'hui?</p>
         </div>
+        <!-- Image quotidienne -->
         <div class="daily">
-            <div class="img"><img src="./ananas.png"></div>
+            <img id="dailyImage" class="dailyImage">
         </div>
     </div>
 </body>
+<script src="script.js"></script>
 
 </html>
