@@ -7,15 +7,22 @@
         "newtab": "index.html"
     },
     "action": {
-        "default_icon": "palette-de-peinture.png"
+        "default_icon": "vaisseau-spatial.png"
     },
     "icons": {
-        "16": "palette-de-peinture.png",
-        "32": "palette-de-peinture.png",
-        "48": "palette-de-peinture.png",
-        "128": "palette-de-peinture.png"
+        "16": "vaisseau-spatial.png",
+        "32": "vaisseau-spatial.png",
+        "48": "vaisseau-spatial.png",
+        "128": "vaisseau-spatial.png"
     },
     "content_scripts": [
-    {"matches": ["<all_urls>"],
-    "css": ["style.css"]  }]
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "css": [
+                "style.css"
+            ]
+        }
+    ]
 }

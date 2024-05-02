@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.topPage {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 15%;
+    padding: 0.5rem;
+    padding-left: 2rem;
+}
+
+
+.search-bar {
+    display: flex;
+    padding-right: 2rem;
+    flex-grow: 1;
+    text-align: center;
+    justify-content: flex-end;
+}
+
+.search {
+    font-size: 20px;
+    border-radius: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.button {
+    background-color: transparent;
+    border: transparent;
+    margin-left: 1rem;
+    display: inline-block;
+}
+
+#searchIcon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.centerContainer {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 5rem;
+    align-items: center;
+    min-height: 45rem;
+}
+
+.titre {
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+}
+
+.about,
+.daily {
+    border: solid red 2px;
+    max-width: 500px;
+    width: 80%;
+    align-self: stretch;
+}
+
+.about {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+
+.daily {
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#dailyImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
