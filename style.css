@@ -16,7 +16,7 @@ body {
 
 .header {
     grid-column: span 2;
-    grid-template-rows: minmax(2rem, 5rem);
+    grid-template-rows: minmax(2rem, 4rem);
     grid-template-areas: "header";
     align-items: center;
     justify-items: center;
@@ -49,8 +49,18 @@ body {
     height: 2em;
     width: 30em;
     border-radius: 20px;
-    border: solid 1px #D46AAB;
     text-align: center;
+    background-color: gainsboro;
+    border: none;
+}
+
+.search:focus {
+    outline: none;
+}
+
+.search::placeholder {
+    border: none;
+    color: white;
 }
 
 .button {
