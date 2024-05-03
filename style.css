@@ -39,7 +39,7 @@ body {
 .search-bar {
     display: flex;
     padding-top: 2em;
-    padding-right: 2em;
+    padding-right: 10rem;
     grid-column: 2;
     justify-self: end;
     justify-items: baseline;
