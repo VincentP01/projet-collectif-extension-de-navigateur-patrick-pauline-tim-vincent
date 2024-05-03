@@ -7,13 +7,13 @@
         "newtab": "index.html"
     },
     "action": {
-        "default_icon": "vaisseau-spatial.png"
+        "default_icon": "astronaute.png"
     },
     "icons": {
-        "16": "vaisseau-spatial.png",
-        "32": "vaisseau-spatial.png",
-        "48": "vaisseau-spatial.png",
-        "128": "vaisseau-spatial.png"
+        "16": "astronaute.png",
+        "32": "astronaute.png",
+        "48": "astronaute.png",
+        "128": "astronaute.png"
     },
     "content_scripts": [
         {

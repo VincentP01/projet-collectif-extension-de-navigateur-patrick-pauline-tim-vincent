@@ -4,13 +4,16 @@ body {
     height: 100vh;
     background-image: url(./Design\ sans\ titre\ \(1\).svg);
     background-size: cover;
+    font-family:"Titillium Web", sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
 
 .mainContainer {
     height: 100%;
     display: grid;
     grid-template-columns: 45% 1fr;
-    grid-template-rows: 10rem 1fr 5rem;
+    grid-template-rows: 5rem 1fr 5rem;
     justify-content: space-around;
 }
 
