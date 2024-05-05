@@ -90,8 +90,42 @@ display: grid;
 .about {
     justify-self: center;
     align-self: center;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 3rem;
 }
+
+/* ANIMATION EFFET TYPING SUR LE TITRE */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+  }
+
+.titre{
+    font-size: 2.8rem;
+    text-align: left;
+    padding-left: 3rem;
+    overflow: hidden; 
+    /* border-right: .15em solid black; */ 
+    white-space: nowrap; 
+    animation: 
+    typing 1.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+.intro{
+    text-align: left;
+    font-weight: 100;
+    padding-left: 3rem;
+    padding-right: 2rem;
+    margin-top: -30px;
+    
+}
+
 
 .daily {
     justify-content: center;
@@ -104,8 +138,8 @@ display: grid;
     /* display: grid; */
     height: 100%;
     width: 100%;
-    max-height: 45em;
-    max-width: 45em;
+    max-height: 38em;
+    max-width: 38em;
     object-fit: cover;
     align-items: center;
     border: 0px solid rgb(255, 255, 255);
