@@ -127,14 +127,15 @@ display: grid;
 }
 
 
-
-
-
-.daily {
+/* DIV DE LA PHOTO ET DE SES INFOS*/
+ .daily {
     justify-content: center;
     align-items: center;
-    grid-column: 2;
-    display: flex;
+    display: flex;   
+}
+
+#picInfos{
+    position: absolute;
 }
 
  #dailyImage {
@@ -152,7 +153,8 @@ display: grid;
     transition: 0.5s ease-in-out;
    
 }
-#dailyImage:hover{
+/* Effet de blur sur over*/
+ #dailyImage:hover{
     filter: blur(5px);
     transition: filter 0.3s, transform 0.3s;
     transform: scale(1.05);
