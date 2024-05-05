@@ -127,6 +127,9 @@ display: grid;
 }
 
 
+
+
+
 .daily {
     justify-content: center;
     align-items: center;
@@ -145,11 +148,28 @@ display: grid;
     border: 0px solid rgb(255, 255, 255);
     border-radius: 10px;    
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; 
+    filter: blur(0);
+    transition: 0.5s ease-in-out;
    
 }
+#dailyImage:hover{
+    filter: blur(5px);
+    transition: filter 0.3s, transform 0.3s;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
 .footer {
     grid-column: span 2;
 }
+
+
+
 
 
 .search-container {
