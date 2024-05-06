@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "Dormir moins bete",
-    "description": "Extension qui affiche des infos culturelles aléatoires",
+    "name": "Enter the spaceship",
+    "description": "Get one personalized feed with Nasa space pics",
     "version": "1.0",
     "chrome_url_overrides": {
         "newtab": "index.html"
