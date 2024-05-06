@@ -4,7 +4,7 @@ const picture=document.querySelector('.dailyImage')
 let allPictureinfos = [];
 
 fetch(`https://api.nasa.gov/planetary/apod?api_key=TqSURpcMofzalKghSjAneOnZRJq5zN7MS4FuJdj3&count=1
-`)
+&hd=true`)
 .then((res)=>res.json())
     .then((data)=>{allPictureinfos=data;
         console.log(data)
@@ -15,5 +15,5 @@ fetch(`https://api.nasa.gov/planetary/apod?api_key=TqSURpcMofzalKghSjAneOnZRJq5z
         console.log(data[0].explanation)
 
 
-        picture.src=data[0].url 
-     })
+        picture.src=data[0].hdurl 
+         })
