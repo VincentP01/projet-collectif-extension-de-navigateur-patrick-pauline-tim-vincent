@@ -150,10 +150,10 @@ body {
     position: relative;
 }
 
-.picInfos{
+.picInfos {
     position: absolute;
     max-height: 38em;
-    max-width: 38em; 
+    max-width: 38em;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     pointer-events: none;
@@ -162,13 +162,15 @@ body {
     text-align: left;
 }
 
-#title, #date, #explanation {
+#title,
+#date,
+#explanation {
     color: white;
     backdrop-filter: none;
 }
 
 
-.daily:hover .picInfos{
+.daily:hover .picInfos {
     opacity: 1;
 }
 
@@ -181,14 +183,14 @@ body {
     object-fit: cover;
     align-items: center;
     border: 0px solid rgb(255, 255, 255);
-    border-radius: 10px;    
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; 
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     filter: blur(0);
     transition: filter 0.3s, transform 0.3s;
 }
 
 /* Effet de blur sur over*/
-#dailyImage:hover{
+#dailyImage:hover {
     filter: blur(5px);
     transition: filter 0.3s, transform 0.3s;
     transform: scale(1.05);
