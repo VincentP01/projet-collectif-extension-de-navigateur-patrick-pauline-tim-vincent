@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url(./nathan-anderson--6SPgTK2pOE-unsplash.jpg);
+    background-size: cover;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Main Container :
+- header
+- section
+- footer */
+.mainContainer {
+    min-height: 100vh;
+}
+
+
+/* En-tête */
+.header {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* Barre de recherche */
+.search-container {
+    display: flex;
+    gap: 0.2rem;
+    max-height: 2rem;
+}
+
+.search {
+    width: 80%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 20px;
+    text-align: center;
+    background-color: gainsboro;
+}
+
+.search:focus {
+    outline: none;
+}
+
+.search::placeholder {
+    border: none;
+    color: white;
+}
+
+.button {
+    max-width: 8%;
+    border-radius: 25%;
+    border: none;
+}
+
+.button img {
+    height: 80%;
+}
+
+
+/* Section principale, englobant les infos extension, l'image et les infos image */
+section {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.titre {
+    text-align: left;
+    padding-left: 3rem;
+    overflow: hidden;
+    white-space: nowrap;
+    animation:
+        typing 1.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+
+/* ANIMATION EFFET TYPING SUR LE TITRE */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: black;
+    }
+}
+
+/* Footer */
+.footer {
+    grid-row: 4;
+}
+
+
+/* Version Desktop */
+@media screen and (min-width: 1024px) {
+    .mainContainer {
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+
+    section {
+        min-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .about {
+        text-align: center;
+        padding: 3rem;
+    }
+
+    .intro {
+        text-justify: auto;
+    }
+
+    /* DIV DE LA PHOTO ET DE SES INFOS*/
+    .daily {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .picInfos {
+        position: absolute;
+        max-height: 38em;
+        max-width: 38em;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        pointer-events: none;
+        color: white;
+        backdrop-filter: none;
+        text-align: left;
+        padding: 2rem;
+        text-justify: auto;
+    }
+
+    .titre {
+        font-size: 2.8rem;
+    }
+
+    .intro {
+        text-align: left;
+        font-weight: 100;
+        padding-left: 3rem;
+        padding-right: 2rem;
+        margin-top: -30px;
+    }
+
+    #title,
+    #date,
+    #explanation {
+        color: white;
+        backdrop-filter: none;
+    }
+
+
+    .daily:hover .picInfos {
+        opacity: 1;
+    }
+
+
+    #dailyImage {
+        height: 100%;
+        width: 100%;
+        max-height: 38em;
+        max-width: 38em;
+        object-fit: cover;
+        align-items: center;
+        border: 0px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        box-shadow: rgba(252, 186, 230, 0.4) 0px 2px 4px, rgba(252, 186, 230, 0.4) 0px 7px 13px -3px, rgba(252, 186, 230, 0.4) 0px -3px 0px inset;
+        filter: blur(0);
+        transition: filter 0.3s, transform 0.3s;
+    }
+
+    /* Effet de blur sur over*/
+    #dailyImage:hover {
+        filter: blur(5px);
+        transition: filter 0.3s, transform 0.3s;
+        transform: scale(1.05);
+    }
+
+}
