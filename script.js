@@ -1,4 +1,7 @@
 const picture=document.querySelector('.dailyImage')
+const title = document.querySelector('.title')
+const date = document.querySelector('.date')
+const explanation = document.querySelector('.explanation')
 
 
 let allPictureinfos = [];
@@ -16,4 +19,7 @@ fetch(`https://api.nasa.gov/planetary/apod?api_key=TqSURpcMofzalKghSjAneOnZRJq5z
 
 
         picture.src=data[0].hdurl 
+        title.innerHTML=`${data[0].title}`
+        date.innerHTML=`${data[0].date}`
+        explanation.innerHTML=`${data[0].explanation}`
          })
