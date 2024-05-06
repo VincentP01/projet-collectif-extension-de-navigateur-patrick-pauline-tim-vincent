@@ -1,11 +1,12 @@
 body {
     margin: 0;
     height: 100vh;
-    background-image: url(./Design\ sans\ titre\ \(1\).svg);
+    background-image: url(./nathan-anderson--6SPgTK2pOE-unsplash.jpg);
     background-size: cover;
     font-family: "Titillium Web", sans-serif;
     font-weight: 200;
     font-style: normal;
+    color:white;
 }
 
 .mainContainer {
