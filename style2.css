@@ -67,11 +67,6 @@ img {
     height: 80%;
 }
 
-.deleteButton {
-    background: transparent;
-    border: none;
-    max-width: 3.6em;
-}
 
 
 /* Section principale, englobant les infos extension, l'image et les infos image */
@@ -230,24 +225,31 @@ section {
 .modal {
     display: none;
     color: black;
+    
 }
 
-.modal-back {
+/*.modal-back {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, .25)
-}
+}*/
 
 .modal-container {
     position: fixed;
     top: 50%;
     left: 50%;
     padding: 25px;
-    background: white;
-    transform: translate(-50%, -50%)
+    background: rgba(255, 255, 255);
+    transform: translate(-50%, -50%);
+    filter: brightness((50%)) blur(20px);
+    border-radius: 10px;
+    box-shadow: rgba(252, 186, 230, 0.4) 0px 2px 4px, rgba(252, 186, 230, 0.4) 0px 7px 13px -3px, rgba(252, 186, 230, 0.4) 0px -3px 0px inset;
+
+    /*opacity: 0.7;*/
+    /*background-color: rgba(255, 255, 255, 0);*/
 }
 
 
@@ -313,11 +315,22 @@ section {
 }
 
 .openPanier:active {
-    transform: scale(0.95)
+    transform: scale(0.95);
     box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
 }
 
 ul {
+    display: inline-block;
+    
+}
+ul li {
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    
+}
+
+.deleteButton {
+    background: transparent;
+    border: none;
+    max-width: 3.4em;
 }
