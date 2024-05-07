@@ -122,7 +122,8 @@ section {
         height: 100%;
         display: grid;
         justify-content: center;
-        align-content: start;
+        align-content: center;
+        grid-template-rows: 10% 1fr 10%;
     }
 
     section {
@@ -130,15 +131,19 @@ section {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
+        padding-top: 0;
     }
 
     .about {
+        justify-content: center;
+        align-content: center;
         text-align: center;
         padding: 3rem;
     }
 
     .intro {
         text-justify: auto;
+        padding: 2rem 0;
     }
 
     /* DIV DE LA PHOTO ET DE SES INFOS*/
@@ -152,7 +157,7 @@ section {
     .picInfos {
         position: absolute;
         max-height: 38em;
-        max-width: 38em;
+        max-width: 34em;
         opacity: 0;
         transition: opacity 0.5s ease-in-out;
         pointer-events: none;
@@ -165,6 +170,7 @@ section {
 
     .titre {
         font-size: 2.8rem;
+        padding-bottom: 0;
     }
 
     .intro {
@@ -215,26 +221,28 @@ section {
 .modal {
     display: none;
     color: black;
-  }
-  .modal-back {
+}
+
+.modal-back {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba( 0, 0, 0, .25 )
-  }
-  .modal-container {
+    background: rgba(0, 0, 0, .25)
+}
+
+.modal-container {
     position: fixed;
     top: 50%;
     left: 50%;
     padding: 25px;
     background: white;
     transform: translate(-50%, -50%)
-  }
+}
 
 
-  /* 
+/* 
 BOUTON ADD TO CART */
 .addToCart {
     display: flex;
@@ -242,58 +250,60 @@ BOUTON ADD TO CART */
     font-family: inherit;
     font-weight: lighter;
     font-size: 12px;
-    padding: 0.5em 1em; /* adjust the padding to your liking */
+    padding: 0.5em 1em;
+    /* adjust the padding to your liking */
     margin-left: 3rem;
     color: white;
     background: #ad5389;
-    background: linear-gradient(0deg, rgba(77,54,208,1) 0%, rgba(132,116,254,1) 100%);
+    background: linear-gradient(0deg, rgba(77, 54, 208, 1) 0%, rgba(132, 116, 254, 1) 100%);
     border: none;
     box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
     letter-spacing: 0.05em;
     border-radius: 20em;
-  }
-  
-  .addToCart svg {
+}
+
+.addToCart svg {
     margin-right: 8px;
-  }
-  
-  .addToCart:hover {
+}
+
+.addToCart:hover {
     box-shadow: 0 0.5em 1.5em -0.5em #4d36d0be;
-    
-  }
-  
-  .addToCart:active {
+
+}
+
+.addToCart:active {
     box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
-  }
+}
 
 
-  /* BOUTON FAVORITE*/
-  .openPanier {
+/* BOUTON FAVORITE*/
+.openPanier {
     display: flex;
     align-items: center;
     font-family: inherit;
     font-weight: lighter;
     font-size: 12px;
-    padding: 0.5em 1em; /* adjust the padding to your liking */
+    padding: 0.5em 1em;
+    /* adjust the padding to your liking */
     margin-left: 3rem;
     color: white;
     background: #ad5389;
-    background: linear-gradient(0deg, rgba(77,54,208,1) 0%, rgba(132,116,254,1) 100%);
+    background: linear-gradient(0deg, rgba(77, 54, 208, 1) 0%, rgba(132, 116, 254, 1) 100%);
     border: none;
     box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
     letter-spacing: 0.05em;
     border-radius: 20em;
-  }
-  
-  .openPanier svg {
+}
+
+.openPanier svg {
     margin-right: 8px;
-  }
-  
-  .openPanier:hover {
+}
+
+.openPanier:hover {
     box-shadow: 0 0.5em 1.5em -0.5em #4d36d0be;
-    
-  }
-  
-  .openPanier:active {
+
+}
+
+.openPanier:active {
     box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
-  }
+}
