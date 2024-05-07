@@ -16,8 +16,8 @@ async function fetchNasaData() {
   try {
     const response = await fetch(`${nasaApiUrl}?api_key=${apiKey}&count=1`);
     const data = await response.json();
-    const { title, url, date, explanation } = data[0];
-    picture.src = url;
+    const { title, hdurl, date, explanation } = data[0];
+    picture.src = hdurl;
     picture.alt = title;
     titleElement.textContent = title;
     dateElement.textContent = date;
@@ -53,7 +53,7 @@ function renderCartList(cart) {
     const deleteButton = document.createElement('button');
     deleteButton.textContent = 'Supprimer';
     deleteButton.addEventListener('click', () => removeItemFromCart(index));
-    cartItem.textContent = `${item.title} - ${item.url}`;
+    cartItem.innerHTML = `${item.title} - <a href="${item.url}" target="_blank">Photo</a>`;
     cartItem.appendChild(deleteButton);
     cartList.appendChild(cartItem);
   });
