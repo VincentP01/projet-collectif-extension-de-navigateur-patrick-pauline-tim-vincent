@@ -205,15 +205,16 @@ section {
         border: 0px solid rgb(255, 255, 255);
         border-radius: 10px;
         box-shadow: rgba(252, 186, 230, 0.4) 0px 2px 4px, rgba(252, 186, 230, 0.4) 0px 7px 13px -3px, rgba(252, 186, 230, 0.4) 0px -3px 0px inset;
-        filter: blur(0);
+        filter: brightness((100%)) blur(0);
         transition: filter 0.3s, transform 0.3s;
     }
 
     /* Effet de blur sur over*/
     #dailyImage:hover {
-        filter: blur(5px);
+        filter: brightness(50%) blur(5px);
         transition: filter 0.3s, transform 0.3s;
         transform: scale(1.05);
+
     }
 
 }
