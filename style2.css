@@ -26,8 +26,8 @@ img {
 .header {
     display: flex;
     align-content: center;
-    justify-content: center;
-    padding: 1rem;
+    justify-content: end;
+    padding: 2rem;
 }
 
 /* Barre de recherche */
@@ -263,5 +263,37 @@ BOUTON ADD TO CART */
   }
   
   .addToCart:active {
+    box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
+  }
+
+
+  /* BOUTON FAVORITE*/
+  .openPanier {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: lighter;
+    font-size: 12px;
+    padding: 0.5em 1em; /* adjust the padding to your liking */
+    margin-left: 3rem;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(0deg, rgba(77,54,208,1) 0%, rgba(132,116,254,1) 100%);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+  }
+  
+  .openPanier svg {
+    margin-right: 8px;
+  }
+  
+  .openPanier:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #4d36d0be;
+    
+  }
+  
+  .openPanier:active {
     box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
   }
