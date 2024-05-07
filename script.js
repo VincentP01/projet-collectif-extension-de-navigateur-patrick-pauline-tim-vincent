@@ -51,7 +51,8 @@ function renderCartList(cart) {
   cart.forEach((item, index) => {
     const cartItem = document.createElement('LI');
     const deleteButton = document.createElement('button');
-    deleteButton.textContent = 'Supprimer';
+    deleteButton.classList.add('deleteButton');
+    deleteButton.innerHTML= '<img src=".\\poubelle.png"/>';
     deleteButton.addEventListener('click', () => removeItemFromCart(index));
     cartItem.innerHTML = `${item.title} - <a href="${item.url}" target="_blank">Photo</a>`;
     cartItem.appendChild(deleteButton);

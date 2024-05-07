@@ -11,6 +11,7 @@ body {
 
 img {
     max-width: 100%;
+    
 }
 
 /* Main Container :
@@ -64,6 +65,12 @@ img {
 
 .button img {
     height: 80%;
+}
+
+.deleteButton {
+    background: transparent;
+    border: none;
+    max-width: 3.6em;
 }
 
 
