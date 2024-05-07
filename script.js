@@ -83,3 +83,13 @@ addToCartButton.addEventListener('click', () => {
 // Call fetchNasaData function
 fetchNasaData();
 renderCartList(cart);
+
+//Panier pop up
+
+document.getElementById('openPanier').addEventListener('click', function(e) {
+  document.getElementById('modal').style.display = 'block'
+})
+
+document.getElementById('modal-close').addEventListener('click', function(e) {
+  document.getElementById('modal').style.display = 'none'
+})
