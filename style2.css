@@ -316,3 +316,8 @@ section {
 .openPanier:active {
     box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
 }
+
+ul {
+    display: flex;
+    align-items: baseline;
+}
