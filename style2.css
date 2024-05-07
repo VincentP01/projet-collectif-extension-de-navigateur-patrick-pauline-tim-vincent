@@ -122,11 +122,11 @@ section {
         height: 100%;
         display: grid;
         justify-content: center;
-        align-content: center;
+        align-content: start;
     }
 
     section {
-        min-width: 100%;
+        max-width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
