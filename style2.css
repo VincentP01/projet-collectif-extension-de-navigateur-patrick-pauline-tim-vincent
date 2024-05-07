@@ -82,7 +82,7 @@ section {
     overflow: hidden;
     white-space: nowrap;
     animation:
-        typing 1.5s steps(40, end),
+        typing 2.5s steps(40, end),
         blink-caret .75s step-end infinite;
 }
 
@@ -142,7 +142,7 @@ section {
     }
 
     .intro {
-        text-justify: auto;
+        text-justify:auto;
         padding: 2rem 0;
     }
 
@@ -191,6 +191,7 @@ section {
 
     .daily:hover .picInfos {
         opacity: 1;
+        
     }
 
 
@@ -242,8 +243,7 @@ section {
 }
 
 
-/* 
-BOUTON ADD TO CART */
+/* BOUTON ADD TO CART */
 .addToCart {
     display: flex;
     align-items: center;
