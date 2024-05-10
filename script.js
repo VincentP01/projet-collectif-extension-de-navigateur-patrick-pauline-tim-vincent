@@ -54,7 +54,7 @@ function renderCartList(cart) {
     deleteButton.classList.add('deleteButton');
     deleteButton.innerHTML= '<img src=".\\poubelle.png"/>';
     deleteButton.addEventListener('click', () => removeItemFromCart(index));
-    cartItem.innerHTML = `${item.title} - <a href="${item.url}" target="_blank">Photo</a>`;
+    cartItem.innerHTML = `${item.title} - <a href="${item.url}" target="_blank">See</a>`;
     cartItem.appendChild(deleteButton);
     cartList.appendChild(cartItem);
   });
