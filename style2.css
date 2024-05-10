@@ -343,6 +343,8 @@ ul li {
 
 
 .credit{
-    text-align: center;
+    text-align: left;
+    margin-left: 8rem;
+    
 
 }
