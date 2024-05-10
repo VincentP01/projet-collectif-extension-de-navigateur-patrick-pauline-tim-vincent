@@ -252,6 +252,12 @@ section {
     /*background-color: rgba(255, 255, 255, 0);*/
 }
 
+#modal-close{
+    float: right;
+    font-size: 25px;
+    color: red;
+}
+
 
 /* BOUTON ADD TO CART */
 .addToCart {
@@ -333,4 +339,10 @@ ul li {
     background: transparent;
     border: none;
     max-width: 3.4em;
+}
+
+
+.credit{
+    text-align: center;
+
 }
