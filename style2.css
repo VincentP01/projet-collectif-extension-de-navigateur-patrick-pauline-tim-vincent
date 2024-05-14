@@ -339,7 +339,7 @@ ul li {
 }
 
 
-ul li>*:nth-child(-n+2) {
+ul li>*:nth-child(n+2) {
 
     margin-right: 0;
 
@@ -356,12 +356,11 @@ ul li>*:last-child {
     background: transparent;
     border: none;
     max-width: 3.4em;
+    padding-top: 0.4em;
 }
 
 
 .credit {
     text-align: left;
     margin-left: 8rem;
-
-
 }
