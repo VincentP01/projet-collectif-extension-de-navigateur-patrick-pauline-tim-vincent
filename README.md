@@ -1,4 +1,4 @@
-# :fusée: Space-Ship Chrome Extension Overview
+# 🚀 Space-Ship Chrome Extension Overview
 # Overview
 Space-Ship is a collaborative project designed to enhance your browsing experience by transforming your new tab page into a gateway to the cosmos. Every time you open a new tab, you'll be greeted with a high-definition photograph provided by NASA's official API. Alongside the stunning visuals, you can discover the name, date, and description of the photograph when you hover over it. Users also have the option to save their favorite photos for later viewing, even after refreshing the page.
 **
